@@ -20,7 +20,10 @@ const store = createStore(tplLiveApp);
 console.log('Initial state:', store.getState());
 
 // Listen for state updates
-const unsubscribe = store.subscribe(() => {
+// const unsubscribe = store.subscribe(() => {
+//     console.log('State changed:', store.getState());
+// });
+store.subscribe(() => {
     console.log('State changed:', store.getState());
 });
 
