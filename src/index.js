@@ -10,6 +10,8 @@ import { createStore } from 'redux';
 import tplLiveApp from './redux/reducers';
 // Import the action creator
 import { receiveNewSearch } from './redux/actions';
+// Import the provider for easy store access
+import { Provider } from 'react-redux';
 
 // Create the store
 const store = createStore(tplLiveApp);
@@ -40,8 +42,14 @@ store.dispatch(receiveNewSearch({
     timeStamp: 4
 }));
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    // Wrap App with Provider to give all child components access to the store
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
 registerServiceWorker();
 
 // Stop listening to state updates
-unsubscribe();
+// unsubscribe();
