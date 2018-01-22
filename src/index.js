@@ -8,42 +8,21 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore } from 'redux';
 // Import the root reducer function
 import tplLiveApp from './redux/reducers';
-// Import the action creator
-import { receiveNewSearch } from './redux/actions';
-// Import the provider for easy store access
+// Import the provider for easy store access everywhere
 import { Provider } from 'react-redux';
 
 // Create the store
-const store = createStore(tplLiveApp);
-
-// Log the initial state
-console.log('Initial state:', store.getState());
+const store = createStore(
+    tplLiveApp,
+    // Next line enables Chrome dev tools extension
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 // Listen for state updates
-// const unsubscribe = store.subscribe(() => {
-//     console.log('State changed:', store.getState());
-// });
+// store.subscribe() returns an unsubscribe function
 store.subscribe(() => {
     console.log('State changed:', store.getState());
 });
-
-// Dispatch some test actions
-store.dispatch(receiveNewSearch({
-    data: '[{"terms":"SWift horse ","browser":"Chrome"}]',
-    timeStamp: 1
-}));
-store.dispatch(receiveNewSearch({
-    data: '[{"terms":"gordon korman on the run 4 ","browser":"Chrome"}]',
-    timeStamp: 2
-}));
-store.dispatch(receiveNewSearch({
-    data: '[{"terms":"Fiction ","browser":"Samsung Internet"}]',
-    timeStamp: 3
-}));
-store.dispatch(receiveNewSearch({
-    data: '[{"terms":"Good bye, philip roth ","browser":"Edge"}]',
-    timeStamp: 4
-}));
 
 ReactDOM.render(
     // Wrap App with Provider to give all child components access to the store
@@ -53,6 +32,3 @@ ReactDOM.render(
     document.getElementById('root')
 );
 registerServiceWorker();
-
-// Stop listening to state updates
-// unsubscribe();

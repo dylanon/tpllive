@@ -1,11 +1,11 @@
 import React from 'react';
-import SearchFeed from './SearchFeed';
+import SearchFeedListener from './SearchFeedListener';
 
 const Searches = props => {
     return (
         <section className="searches">
             <h2>Real-time searches</h2>
-            <SearchFeed />
+            <SearchFeedListener />
         </section>
     )
 }
