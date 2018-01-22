@@ -19,7 +19,9 @@ const mapDispatchToProps = dispatch => {
 
 class SearchFeedListener extends Component {
     componentDidMount() {
+        // Establish a WebSocket connection
         const connection = new WebSocket('ws://dashboard.tpllabs.ca:4571/rtsearches');
+        // Store each new search that comes over the connection in state
         connection.onmessage = e => this.props.onNewSearch(e);
     }
 
