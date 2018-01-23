@@ -20,9 +20,9 @@ const store = createStore(
 
 // Listen for state updates
 // store.subscribe() returns an unsubscribe function
-store.subscribe(() => {
-    console.log('State changed:', store.getState());
-});
+// store.subscribe(() => {
+//     console.log('State changed:', store.getState());
+// });
 
 ReactDOM.render(
     // Wrap App with Provider to give all child components access to the store
