@@ -28,7 +28,7 @@ export default function tplLiveApp(state = initialState, action) {
                 {
                     terms: action.terms,
                     browser: action.browser,
-                    timestamp: action.timestamp
+                    receivedAt: action.receivedAt
                 }
             ]
         });
