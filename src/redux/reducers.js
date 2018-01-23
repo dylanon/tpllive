@@ -6,7 +6,7 @@
 //         {
 //             terms: "dog books",
 //             browser: "Chrome",
-//             timestamp: 1234132431.1234
+//             receivedAt: 1516721823767
 //         }
 //     ]
 // }

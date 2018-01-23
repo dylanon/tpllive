@@ -18,12 +18,6 @@ const store = createStore(
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-// Listen for state updates
-// store.subscribe() returns an unsubscribe function
-// store.subscribe(() => {
-//     console.log('State changed:', store.getState());
-// });
-
 ReactDOM.render(
     // Wrap App with Provider to give all child components access to the store
     <Provider store={store}>
