@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SearchFeed from '../components/SearchFeed';
 import { receiveNewSearch } from '../redux/actions';
+import moment from 'moment';
 
 const mapStateToProps = state => {
     return {
@@ -11,8 +12,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onNewSearch: (messageEvent) => {
-            dispatch(receiveNewSearch(messageEvent));
+        onNewSearch: (messageEvent, timestamp) => {
+            dispatch(receiveNewSearch(messageEvent, timestamp));
         }
     }
 }
@@ -22,7 +23,7 @@ class SearchFeedListener extends Component {
         // Establish a WebSocket connection
         const connection = new WebSocket('ws://dashboard.tpllabs.ca:4571/rtsearches');
         // Store each new search that comes over the connection in state
-        connection.onmessage = e => this.props.onNewSearch(e);
+        connection.onmessage = e => this.props.onNewSearch(e, Number(moment().format('x')));
     }
 
     render() {
