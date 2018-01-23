@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchFeedListener from './containers/SearchFeedListener';
+import SearchFeedListener from '../containers/SearchFeedListener';
 
 const Searches = props => {
     return (

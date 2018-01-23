@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SearchFeed from '../SearchFeed';
+import SearchFeed from '../components/SearchFeed';
 import { receiveNewSearch } from '../redux/actions';
 
 const mapStateToProps = state => {
