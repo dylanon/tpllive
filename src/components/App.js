@@ -4,8 +4,9 @@ import React, { Component } from 'react';
 
 // Import the app's components
 import Header from './Header';
-import Searches from './Searches';
 import BrowserStats from './BrowserStats';
+import SearchStats from './SearchStats';
+import Searches from './Searches';
 
 class App extends Component {
   render() {
@@ -14,9 +15,7 @@ class App extends Component {
         <Header />
         <main>
           <BrowserStats />
-          <section className="content-stats">
-            <h2>Search stats</h2>
-          </section>
+          <SearchStats />
           <Searches />
         </main>
       </div>

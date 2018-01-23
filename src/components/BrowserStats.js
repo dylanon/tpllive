@@ -10,6 +10,14 @@ const BrowserStats = props => {
                 <LogoHeading />
                 <PercentageBar />
             </div>
+            <div>
+                <LogoHeading />
+                <PercentageBar />
+            </div>
+            <div>
+                <LogoHeading />
+                <PercentageBar />
+            </div>
         </section>
     )
 }
