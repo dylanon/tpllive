@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SearchFeed from '../components/SearchFeed';
+import VisibleSearchFeed from './VisibleSearchFeed';
 import { receiveNewSearch } from '../redux/actions';
 import moment from 'moment';
-
-const mapStateToProps = state => {
-    return {
-        searches: state.searches
-    }
-}
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -27,12 +21,12 @@ class SearchFeedListener extends Component {
     }
 
     render() {
-        return <SearchFeed searches={this.props.searches} />
+        return <VisibleSearchFeed />
     }
 }
 
 // Export SearchFeedListener connected to the Redux store
 export default connect(
-    mapStateToProps,
+    null,
     mapDispatchToProps
 )(SearchFeedListener);

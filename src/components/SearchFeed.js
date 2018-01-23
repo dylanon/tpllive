@@ -4,7 +4,7 @@ const SearchFeed = props => {
     return (
         <ul className="search-feed">
             {props.searches.map(search => {
-                return <li key={search.timestamp}>"{search.terms}" ({search.browser})</li>
+                return <li key={search.receivedAt}>"{search.terms}" ({search.browser})</li>
             })}
         </ul>
     )
