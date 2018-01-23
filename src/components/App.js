@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 // Import the app's components
 import Header from './Header';
 import Searches from './Searches';
+import BrowserStats from './BrowserStats';
 
 class App extends Component {
   render() {
@@ -12,9 +13,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <section className="browser-stats">
-            <h2>Searches by browser</h2>
-          </section>
+          <BrowserStats />
           <section className="content-stats">
             <h2>Search stats</h2>
           </section>
