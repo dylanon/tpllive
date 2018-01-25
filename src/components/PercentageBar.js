@@ -4,12 +4,14 @@ const PercentageBar = props => {
     const style = {
         background: 'tomato',
         height: '10px',
-        content: ''
+        content: '',
+        width: `${props.percentage}%`,
+        transition: 'width 0.3s ease'
     }
     return (
         <div>
             <div style={style}></div>
-            <p>100%</p>
+            <p>{props.percentage.toFixed(0)}%</p>
         </div>
     )
 }

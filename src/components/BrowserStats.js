@@ -1,23 +1,11 @@
 import React from 'react';
-import LogoHeading from './LogoHeading';
-import PercentageBar from './PercentageBar';
+import PercentageCalculator from '../containers/PercentageCalculator';
 
 const BrowserStats = props => {
     return (
         <section className="browser-stats">
             <h2>Searches by browser</h2>
-            <div>
-                <LogoHeading />
-                <PercentageBar />
-            </div>
-            <div>
-                <LogoHeading />
-                <PercentageBar />
-            </div>
-            <div>
-                <LogoHeading />
-                <PercentageBar />
-            </div>
+            <PercentageCalculator />
         </section>
     )
 }
