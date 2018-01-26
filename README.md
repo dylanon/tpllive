@@ -7,7 +7,15 @@ Real-time dashboard showing search data from the [Toronto Public Library website
 - **[Done]** Connect to TPL's realtime feed of searches conducted on [torontopubliclibrary.ca](https://torontopubliclibrary.ca) with WebSockets
 - **[Done]** Display real-time searches as they come in
 - **[Done]** Display a data visualization of web browsers used to conduct searches
-- Clicking a search result opens the search on the TPL website
+- **[Done]** Clicking a search result opens the search on the TPL website
+
+## Enhancements
+
+- Show additional stats:
+  - Most search term(s)
+  - Average search length (in characters or words)
+  - Current search rate (searches per minute or searches per second)
+  - Total searches that statistics are based on
 
 ## Credits
 
