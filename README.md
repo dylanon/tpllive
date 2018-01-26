@@ -12,7 +12,7 @@ Real-time dashboard showing search data from the [Toronto Public Library website
 ## Enhancements
 
 - Show additional stats:
-  - Most search term(s)
+  - Most common search term(s)
   - Average search length (in characters or words)
   - Current search rate (searches per minute or searches per second)
   - Total searches that statistics are based on
