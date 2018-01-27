@@ -9,8 +9,8 @@ const SearchFeed = props => {
             {props.searches.map(search => {
                 const searchUrlQuery = encodeURIComponent(search.terms);
                 return (
-                    <a href={searchUrlBase + searchUrlQuery} target="_blank">
-                        <li key={search.receivedAt}>"{search.terms}"</li>
+                    <a key={search.receivedAt} href={searchUrlBase + searchUrlQuery} target="_blank">
+                        <li>"{search.terms}"</li>
                     </a>
                 )
             })}
