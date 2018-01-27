@@ -15,7 +15,7 @@ class App extends Component {
         <Header />
         <main>
           <BrowserStats />
-          <SearchStats />
+          {/* <SearchStats /> */}
           <Searches />
         </main>
       </div>
