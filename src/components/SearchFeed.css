@@ -1,0 +1,21 @@
+.search-feed {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search-feed__link {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    border-radius: 20px;
+    padding: 1.6rem 3.2rem;
+    margin: 0.8rem 0;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.search-feed__link:hover {
+    background: rgb(247, 247, 247);
+    transform: scale(1.02);
+}
