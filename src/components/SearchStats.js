@@ -5,9 +5,8 @@ const SearchStats = props => {
     return (
         <section className="search-stats">
             <h2>Search stats</h2>
-            <TextStat />
-            <TextStat />
-            <TextStat />
+            <TextStat title='Most common search term' text='dog' />
+            <TextStat title='Average search length' text='18 characters'/>
       </section>
     )
 }

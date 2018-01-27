@@ -3,8 +3,8 @@ import React from 'react';
 const TextStat = props => {
     return (
         <div>
-            <h3>Stat heading goes here:</h3>
-            <p>The text stat</p>
+            <h3>{props.title}</h3>
+            <p>{props.text}</p>
         </div>
     )
 }
