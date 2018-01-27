@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 // Import the app's components
 import Header from './Header';
 import BrowserStats from './BrowserStats';
-import SearchStats from './SearchStats';
+// import SearchStats from './SearchStats';
 import Searches from './Searches';
 
 class App extends Component {
