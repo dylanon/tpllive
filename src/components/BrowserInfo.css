@@ -1,6 +1,9 @@
 .browser-info {
     list-style: none;
-    border: 1px solid rgba(0, 0, 0, 0.459);
+    border: 1px solid rgba(0, 0, 0, 0.096);
     border-radius: 20px;
     padding: 1.6rem;
+    margin: 0.8rem;
+    /* Subtract left and right margins from total width */
+    width: calc(50% - 0.8rem * 2);
 }
