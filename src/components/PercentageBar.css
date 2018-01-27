@@ -1,0 +1,20 @@
+.percentage-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.percentage-bar__bar {
+    background: linear-gradient(to top right, #153b68, #1d69c5);
+    height: 8px;
+    content: '';
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.percentage-bar__percent-text {
+    /* border: 1px solid black; */
+    width: 25%;
+    margin-left: auto;
+    text-align: right;
+}
