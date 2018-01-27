@@ -6,7 +6,9 @@ const BrowserStats = props => {
     return (
         <section className="browser-stats">
             <h2>Searches by browser</h2>
-            <PercentageCalculator />
+            <ul className="browser-list">
+                <PercentageCalculator />
+            </ul>
         </section>
     )
 }

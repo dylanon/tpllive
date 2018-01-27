@@ -5,10 +5,10 @@ import './BrowserInfo.css';
 
 const BrowserInfo = props => {
     return (
-        <div className="browser-info">
+        <li className="browser-info">
             <LogoHeading logoPath={props.logo} heading={props.name} />
             <PercentageBar percentage={props.percentage} />
-        </div>
+        </li>
     )
 }
 
