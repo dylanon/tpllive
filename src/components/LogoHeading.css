@@ -1,0 +1,13 @@
+.logo-heading {
+    display: flex;
+    align-items: center;
+}
+
+.logo-heading__logo {
+    display: block;
+    width: 48px;
+}
+
+.logo-heading__heading {
+    margin-left: 1.6rem;
+}
