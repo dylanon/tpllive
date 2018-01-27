@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import LogoHeading from '../components/LogoHeading';
-import PercentageBar from '../components/PercentageBar';
+import BrowserInfo from '../components/BrowserInfo';
 
 // Browser logos
 import browser from '../assets/browser.html_256x256.png';
@@ -66,12 +65,7 @@ class PercentageCalculator extends Component {
         return (
             <Fragment>
                 {browserCountArray.map(browser => {
-                    return (
-                        <Fragment key={browser.name}>
-                            <LogoHeading logoPath={browser.logo} heading={browser.name} />
-                            <PercentageBar percentage={browser.percentage} />
-                        </Fragment>
-                    )
+                    return <BrowserInfo key={browser.name} name={browser.name} logo={browser.logo} percentage={browser.percentage} />
                 })}
             </Fragment>
         )
