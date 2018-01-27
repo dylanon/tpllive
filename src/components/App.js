@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 // Import the app's components
 import Header from './Header';
@@ -13,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <main>
+        <main className="main">
           <BrowserStats />
           {/* <SearchStats /> */}
           <Searches />

@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchFeedListener from '../containers/SearchFeedListener';
+import './Searches.css';
 
 const Searches = props => {
     return (

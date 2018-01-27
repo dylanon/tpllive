@@ -1,10 +1,10 @@
-header {
+.header {
     background: #153b68;
     color: white;
     padding: 1em;
 }
 
-h1 {
+.site-title {
     margin: 0;
     text-align: center;
     text-transform: lowercase;

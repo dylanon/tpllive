@@ -3,8 +3,8 @@ import './Header.css';
 
 const Header = props => {
     return (
-        <header>
-            <h1>TPL Live</h1>
+        <header className='header'>
+            <h1 className='site-title'>TPL Live</h1>
         </header>
     )
 }
