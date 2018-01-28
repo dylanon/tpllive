@@ -1,6 +1,6 @@
 .search-feed {
     margin: 0;
-    padding: 0;
+    padding: 0.8rem 0 0 0;
     list-style: none;
 }
 
@@ -9,7 +9,7 @@
     border: 1px solid rgba(0, 0, 0, 0.096);
     border-radius: 20px;
     padding: 1.6rem 3.2rem;
-    margin: 0.8rem 0;
+    margin: 0 0 0.8rem 0;
     text-align: center;
     text-decoration: none;
     transition: transform 0.3s ease;
