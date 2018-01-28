@@ -11,6 +11,8 @@
 @media (max-width: 750px) {
     .browser-info {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

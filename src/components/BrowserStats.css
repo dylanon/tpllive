@@ -14,9 +14,11 @@
     .browser-stats {
         width: 50%;
     }
-
+    
     .browser-list {
         flex-direction: column;
+        /* Remove negative margin since BrowserInfo components are full width now */
+        margin: 0;
     }
 }
 
