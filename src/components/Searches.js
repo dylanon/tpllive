@@ -6,6 +6,7 @@ const Searches = props => {
     return (
         <section className="searches">
             <h2>Real-time searches</h2>
+            <p>Click a search to see its results on <a href="https://www.tpl.ca" target="_blank">tpl.ca</a>!</p>
             <SearchFeedListener />
         </section>
     )

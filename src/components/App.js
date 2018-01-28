@@ -3,6 +3,7 @@ import './App.css';
 
 // Import the app's components
 import Header from './Header';
+import About from './About';
 import BrowserStats from './BrowserStats';
 // import SearchStats from './SearchStats';
 import Searches from './Searches';
@@ -13,9 +14,12 @@ class App extends Component {
       <div className="App">
         <Header />
         <main className="main">
-          <BrowserStats />
-          {/* <SearchStats /> */}
-          <Searches />
+          <About />
+          <div className="main__flex-container">
+            <BrowserStats />
+            {/* <SearchStats /> */}
+            <Searches />
+          </div>
         </main>
       </div>
     );
