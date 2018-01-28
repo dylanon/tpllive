@@ -16,7 +16,7 @@ class VisibleSearchFeed extends Component {
             return b.receivedAt - a.receivedAt;
         });
         // Limit the number of searches displayed
-        const visibleSearches = searches.slice(0, 20);
+        const visibleSearches = searches.slice(0, 10);
         
         return <SearchFeed searches={visibleSearches} />
     }
