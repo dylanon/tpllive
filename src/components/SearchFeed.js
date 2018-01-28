@@ -10,7 +10,7 @@ const SearchFeed = props => {
                 const searchUrlQuery = encodeURIComponent(search.terms);
                 return (
                     <a key={search.receivedAt} className="search-feed__link" href={searchUrlBase + searchUrlQuery} target="_blank">
-                        <li>"{search.terms}"</li>
+                        <li className="search-feed__li">{search.terms}</li>
                     </a>
                 )
             })}
