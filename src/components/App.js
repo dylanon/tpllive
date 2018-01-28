@@ -7,6 +7,7 @@ import About from './About';
 import BrowserStats from './BrowserStats';
 // import SearchStats from './SearchStats';
 import Searches from './Searches';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Searches />
           </div>
         </main>
+        <Footer />
       </div>
     );
   }
