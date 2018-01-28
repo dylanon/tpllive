@@ -2,7 +2,7 @@
     list-style: none;
     border: 1px solid rgba(0, 0, 0, 0.096);
     border-radius: 20px;
-    padding: 1.6rem;
+    padding: 1.6rem 3.2rem;
     margin: 0.8rem;
     /* Subtract left and right margins from total width */
     width: calc(50% - 0.8rem * 2);
@@ -10,14 +10,13 @@
 
 @media (max-width: 750px) {
     .browser-info {
-        width: 75%;
-        padding: 1.6rem 3.2rem;
-        margin: 0.8rem auto;
+        width: 100%;
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 301px) and (max-width: 480px) {
     .browser-info {
-        width: 100%;
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
     }
 }
