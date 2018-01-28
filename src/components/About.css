@@ -1,3 +1,8 @@
 .about {
     text-align: center;
+    background: rgba(21, 58, 104, 0.075);
+    width: 60%;
+    margin: 1.6rem auto;
+    padding: 1.6rem 3.2rem;
+    border-radius: 20px;
 }
