@@ -4,7 +4,7 @@
 }
 
 .browser-list {
-    margin: 0;
+    margin: 0 -0.8rem;
     padding: 0;
     display: flex;
     flex-flow: row wrap;
