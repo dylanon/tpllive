@@ -7,3 +7,17 @@
     /* Subtract left and right margins from total width */
     width: calc(50% - 0.8rem * 2);
 }
+
+@media (max-width: 750px) {
+    .browser-info {
+        width: 75%;
+        padding: 1.6rem 3.2rem;
+        margin: 0.8rem auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .browser-info {
+        width: 100%;
+    }
+}

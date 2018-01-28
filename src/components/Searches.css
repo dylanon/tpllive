@@ -2,3 +2,18 @@
     width: 40%;
     padding: 0 3.2rem 0 0;
 }
+
+@media (max-width: 750px) {
+    .searches {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .searches {
+        width: 100%;
+        padding: 0 3.2rem;
+        /* Show before BrowserStats */
+        order: 0;
+    }
+}

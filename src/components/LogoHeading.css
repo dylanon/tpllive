@@ -12,4 +12,15 @@
 
 .logo-heading__heading {
     margin-left: 1.6rem;
+    text-align: center;
+}
+
+@media (max-width: 1060px) {
+    .logo-heading {
+        flex-direction: column;
+    }
+
+    .logo-heading__heading {
+        margin-left: 0;
+    }   
 }

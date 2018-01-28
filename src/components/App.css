@@ -7,3 +7,9 @@
   display: flex;
   flex-flow: row wrap;
 }
+
+@media (max-width: 480px) {
+  .main__flex-container {
+    flex-direction: column;
+  }
+}

@@ -9,3 +9,21 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+@media (max-width: 750px) {
+    .browser-stats {
+        width: 50%;
+    }
+
+    .browser-list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .browser-stats {
+        width: 100%;
+        /* Show after the searches section */
+        order: 1;
+    }
+}
