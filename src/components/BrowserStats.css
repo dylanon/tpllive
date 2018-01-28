@@ -1,6 +1,6 @@
 .browser-stats {
     width: 60%;
-    padding: 0 3.2rem;
+    padding-right: 3.2rem;
 }
 
 .browser-list {
@@ -23,6 +23,7 @@
 @media (max-width: 480px) {
     .browser-stats {
         width: 100%;
+        padding-right: 0;
         /* Show after the searches section */
         order: 1;
     }

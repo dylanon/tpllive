@@ -1,6 +1,8 @@
 .main {
   max-width: 1150px;
   margin: 0 auto;
+  /* Pad the sides of the main content */
+  padding: 0 3.2rem;
 }
 
 .main__flex-container {
