@@ -13,6 +13,7 @@ Real-time dashboard showing search data from the [Toronto Public Library website
 
 - Show additional stats:
   - Most common search term(s)
+    - **textstats branch**: Mostly works, but duplicate words other than *the*, *of*, *and*, etc. aren't very common, so this isn't an exciting stat
   - Average search length (in characters or words)
   - Current search rate (searches per minute or searches per second)
   - Total searches that statistics are based on
