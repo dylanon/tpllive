@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 // Import to create the store
 import { createStore } from 'redux';
@@ -25,4 +25,4 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
-registerServiceWorker();
+// registerServiceWorker();
