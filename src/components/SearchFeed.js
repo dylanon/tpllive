@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchFeed.css';
+import SearchItem from './SearchItem';
 
 const SearchFeed = props => {
     // All searches on torontopubliclibrary.ca share this base URL:
@@ -9,9 +10,12 @@ const SearchFeed = props => {
             {props.searches.map(search => {
                 const searchUrlQuery = encodeURIComponent(search.terms);
                 return (
-                    <a key={search.receivedAt} className="search-feed__link" href={searchUrlBase + searchUrlQuery} target="_blank">
-                        <li className="search-feed__li">{search.terms}</li>
-                    </a>
+                    <SearchItem 
+                        key={search.receivedAt}
+                        search={search}
+                        searchUrlBase={searchUrlBase}
+                        searchUrlQuery={searchUrlQuery} 
+                    />
                 )
             })}
         </ul>
